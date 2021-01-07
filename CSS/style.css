@@ -55,6 +55,15 @@ nav {
   flex-direction: column;
   text-align: center;
 }
+.second {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
 .first div {
   width: 60%;
   display: flex;
@@ -223,6 +232,10 @@ input {
 .modal {
   display: none;
 }
+.input_form h1 {
+  text-align: start;
+  margin-left: 1rem;
+}
 
 nav.group {
   justify-content: flex-end;
@@ -247,4 +260,28 @@ nav .btn .save_btn {
   padding: 4px;
   border: 1px solid #b3b8bcbb;
   margin-left: 1rem;
+}
+
+.profileBox {
+  padding: 1.7rem;
+  width: 550px !important;
+}
+
+.input_form.img {
+  justify-content: flex-start;
+  display: flex;
+}
+
+.profileImg {
+  background-color: #e4e4e4;
+  border-radius: 3px;
+  padding: 4px;
+  margin-left: 1rem;
+  margin-top: 1.7rem;
+}
+
+.profileGroup {
+  text-align: start;
+  align-items: flex-start;
+  padding: 1rem;
 }
