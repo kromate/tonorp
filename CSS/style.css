@@ -5,6 +5,10 @@
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
 }
+button {
+  border: none;
+  outline: none;
+}
 
 body {
   background-color: #f5f2fe;
@@ -79,4 +83,112 @@ nav {
   border: none;
   color: #fff;
   border-radius: 8px;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.507);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  width: 600px;
+  max-width: 90vw;
+  /* min-height: 400px; */
+}
+.login_card {
+  padding: 2rem !important;
+}
+
+.card .header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 4.1rem;
+}
+.header h4 {
+  font-size: 1.4rem;
+}
+
+a {
+  color: #7647eb;
+  text-decoration: none;
+}
+.input_form {
+  margin: 8px 0px;
+}
+.input_form.select {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  margin: 2rem 4rem;
+  font-size: 0.85rem;
+}
+.input_form.btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+}
+label {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  max-width: 100%;
+  width: 28rem;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #b3b8bcbb;
+  border-radius: 4px;
+}
+.select > input {
+  width: fit-content;
+  margin: 0px 6px;
+}
+
+.save_btn {
+  padding: 8px;
+  background: #7647eb;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  width: 6rem;
+}
+.cancel_btn {
+  padding: 8px;
+  background: #e4e4e4;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #000;
+  border-radius: 8px;
+  width: 6rem;
+  margin-left: 1.5rem;
+}
+
+.modal {
+  display: none;
 }

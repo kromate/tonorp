@@ -10,8 +10,8 @@
     <nav>
       <img src="./Images/logo.png" alt="logo" />
       <div>
-        <button class="nav_btn1">login</button>
-        <button class="nav_btn2">Create Account</button>
+        <button class="nav_btn1" id="loginBtn">login</button>
+        <button class="nav_btn2" id="createAcc">Create Account</button>
       </div>
     </nav>
 
@@ -26,6 +26,82 @@
       </div>
     </section>
 
-    <section class="login modal" id="login"></section>
+    <!-- ===================Create Account Modal=================================== -->
+    <section class="login modal" id="createAccModal">
+      <div class="backdrop">
+        <div class="card login_card">
+          <div class="header">
+            <h4>Create Account</h4>
+            <p>Already have an account? <a href="#">Login</a></p>
+          </div>
+          <form action="">
+            <div class="input_form">
+              <label for="">First Name</label>
+              <input type="text" />
+            </div>
+            <div class="input_form">
+              <label for="">Last Name</label>
+              <input type="text" />
+            </div>
+            <div class="input_form">
+              <label for="">Phone Num</label>
+              <input type="text" />
+            </div>
+            <div class="input_form">
+              <label for="">Email Address</label>
+              <input type="text" />
+            </div>
+            <div class="input_form">
+              <label for="">Password</label>
+              <input type="text" />
+            </div>
+            <div class="input_form select">
+              <input type="checkbox" />
+              <p>
+                By clicking this, you are agreeing to our Terms & Conditions and our Privacy Policy
+              </p>
+            </div>
+            <div class="input_form btn">
+              <div>
+                <button class="save_btn" type="button">Save</button>
+                <button class="cancel_btn" id="cancelCreateAcc" type="button">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ===================Create Account Modal End=================================== -->
+
+    <!-- ===================Login  Modal=================================== -->
+    <section class="login modal" id="loginModal">
+      <div class="backdrop">
+        <div class="card login_card">
+          <div class="header">
+            <h4>Login</h4>
+            <p>Are you new to Tonorp?<a href="#"> Sign Up</a></p>
+          </div>
+          <form action="">
+            <div class="input_form">
+              <label for="">Email Address</label>
+              <input type="text" />
+            </div>
+            <div class="input_form">
+              <label for="">Password</label>
+              <input type="text" />
+            </div>
+
+            <div class="input_form btn">
+              <div>
+                <button class="save_btn" type="button">Login</button>
+                <button class="cancel_btn" id="cancelLoginModal" type="button">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ===================Login  Modal End=================================== -->
   </body>
+  <script src="./JS/loginModal.js"></script>
 </html>
