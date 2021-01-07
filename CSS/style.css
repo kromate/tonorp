@@ -103,7 +103,14 @@ nav {
   border-radius: 8px;
   width: 600px;
   max-width: 90vw;
-  /* min-height: 400px; */
+}
+
+.card.container {
+  background-color: transparent;
+  border: 1px solid #b3b8bcbb;
+  width: 630px;
+  max-width: 90vw;
+  min-height: 480px;
 }
 .login_card {
   padding: 2rem !important;
@@ -137,6 +144,18 @@ a {
   align-items: center;
   justify-content: flex-end;
   width: 80%;
+}
+.input_form.group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+  flex-direction: row;
+}
+.InputGroup {
+  width: 60%;
+  background-color: transparent;
+  padding: 0.6rem;
 }
 label {
   display: block;
@@ -176,6 +195,18 @@ input {
   border-radius: 8px;
   width: 6rem;
 }
+.save_btn.group {
+  margin-left: 2rem;
+  padding: 8px;
+  background: #7647eb;
+  font-size: 1.1rem;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  width: 6rem;
+}
 .cancel_btn {
   padding: 8px;
   background: #e4e4e4;
@@ -191,4 +222,29 @@ input {
 
 .modal {
   display: none;
+}
+
+nav.group {
+  justify-content: flex-end;
+}
+nav .btn {
+  display: flex;
+}
+nav .btn .save_btn {
+  font-size: 0.9rem;
+  padding: 5px;
+}
+.groupIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+.groupImg {
+  background-color: #e4e4e4;
+  border-radius: 100%;
+  padding: 4px;
+  border: 1px solid #b3b8bcbb;
+  margin-left: 1rem;
 }
